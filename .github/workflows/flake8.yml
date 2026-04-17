@@ -3,7 +3,7 @@ name: Lint do código com Flake8
 on: [push, pull_request]
 
 jobs:
-  black:
+  flake8:
     runs-on: ubuntu-latest
 
     steps:

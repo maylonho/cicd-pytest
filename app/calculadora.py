@@ -1,8 +1,3 @@
-import os
-
-nome = "joao"
-
-
 def soma(a, b):
     return a + b
 
