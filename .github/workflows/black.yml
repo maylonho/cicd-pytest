@@ -1,15 +1,21 @@
 name: Formatador Black
 
-on: [push, pull_request] # Dispara em push ou PR
+on: [push, pull_request]
 
 jobs:
-  lint:
+  black:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
-      
-      - name: Rodar Black
-        uses: psf/black@stable
+
+      - name: Instalar Python
+        uses: actions/setup-python@v4
         with:
-          options: "--check --verbose"
-          src: "."
+          python-version: '3.x'
+
+      - name: Instalar Black
+        run: pip install black
+
+      - name: Rodar Black
+        run: black --check --verbose .
