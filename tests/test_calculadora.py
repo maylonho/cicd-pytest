@@ -1,5 +1,4 @@
-import pytest
-from app.calculadora import *
+from app.calculadora import soma
 
 
 def test_soma():

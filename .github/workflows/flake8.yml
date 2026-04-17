@@ -1,4 +1,4 @@
-name: Formatador Black
+name: Lint do código com Flake8
 
 on: [push, pull_request]
 
