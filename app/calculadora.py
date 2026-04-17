@@ -1,6 +1,15 @@
-def soma(a,b):
+import os
+
+nome = "joao"
+
+
+def soma(a, b):
     return a + b
-def sub( a ,b):
+
+
+def sub(a, b):
     return a - b
-def mult( a ,b):
+
+
+def mult(a, b):
     return a * b
