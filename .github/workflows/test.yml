@@ -23,6 +23,3 @@ jobs:
 
       - name: Rodar os Testes
         run: pytest
-
-      - name: Rodar o black
-        run: black .

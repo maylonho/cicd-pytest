@@ -1,0 +1,15 @@
+name: Formatador Black
+
+on: [push, pull_request] # Dispara em push ou PR
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Rodar Black
+        uses: psf/black@stable
+        with:
+          options: "--check --verbose"
+          src: "."
